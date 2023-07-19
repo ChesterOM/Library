@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Skeleton-2.0.4/css/normalize.css">
+    <link rel="stylesheet" href="Skeleton-2.0.4/css/skeleton.css">
+    
+</head>
+<body>
+    <div class="container">
+        
+        <div class="row" style="margin-top: 50px;"><h1>My Book Library</h1>
+    
+        <p>This is a project for <a href="https://www.theodinproject.com/lessons/node-path-javascript-library">The Odin Project</a> in which I have to make a library using Object Constructors and LocalStorage.</p>
+        </div>
+
+        <div class="row">
+            <form id="form-info">
+                <div class="five columns">
+                    <label for="book">Book</label>
+                    <input type="text" id="title" name="title" class="u-full-width">
+                </div>
+                <div class="five columns">
+                    <label for="author">Author</label>
+                    <input type="text" id="author" name="author" class="u-full-width">
+                </div>
+                <div class="two columns">
+                    <label for="status">Status</label>
+                    <select name="read" id="read" class="u-full-width">
+                        <option value="read">Read</option>
+                        <option value="not-read">Not Read</option>
+                    </select>
+                </div>
+                
+                <button type="submit" class="button-primary">Submit</button>
+
+            </form>
+        </div> 
+
+        <div class="row">
+              <div class="row">
+                <div class="twelve columns"></div>
+                <table class="twelve columns">
+                  <tbody><tr>
+                    <th>Name</th>
+                    <th>Author</th>
+                    <th>Status</th>
+                    <th></th>
+                  </tr>
+                  </tbody>
+                  
+                  <tbody id="book-table-body">
+                  </tbody>
+                </table>
+              </div>
+        </div>
+
+    </div>
+    <script src="code.js"></script>
+</body>
+
+</html>
